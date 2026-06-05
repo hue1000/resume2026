@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front End Portfolio</title>
+    <link rel="stylesheet" href="sigma.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="grid-bg"></div>
+
+        <nav class="nav-bar">
+            <a href="#floor-1" class="nav-link">소개</a>
+            <a href="#floor-2" class="nav-link">목표/학습</a>
+            <a href="#floor-3" class="nav-link">기타</a>
+        </nav>
+
+        <div class="top-arrow-btn" onclick="scrollToTop()">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 19V10H8L12 6L16 10H13V19H11Z" fill="white"/>
+            </svg>
+        </div>
+
+        <div id="floor-1" class="row-first">
+          <div class="profile-card card-red">
+    <div class="glow-effect"></div>
+    <div class="orange-circle"></div>
+    
+    <div class="hi-container">
+        <p class="profile-p">HI</p> 
+        <div class="fake-shadow"></div>
+    </div>
+</div> 
+            <div class="card info-card card-orange">
+                <div class="badge badge-orange">FIGMA</div>
+                <div class="card-content">
+                    <p>NAME:<br><span class="dot-line">FRONT END</span></p>
+                    <p>STARTED:<br><span class="dot-line">2026 - 04 - 29</span></p>
+                    <p>FIGMA STARTED:<br><span class="dot-line">2026 - 05 - 26</span></p>
+                    <p>BIO:<br><span class="dot-line">MY FIRST FIGMA PAGE</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="floor-2" class="row-first">
+            <div class="card learning-card card-yellow">
+                <div class="badge badge-yellow">LEARNING</div>
+                <div class="card-content">
+                    <ul>
+                        <li>🛠️ HTML</li>
+                        <li>🎨 CSS</li>
+                        <li>✏️ FIGMA</li>
+                        <li>🐙 GITHUB</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card about-card card-green">
+                <div class="badge badge-green">ABOUT</div>
+                <div class="card-content">
+                    <p class="about-p"> 2026.05.26~<br>
+                        안녕하세요 현재 프론트 엔트 개발을 공부하고 있는 정현우입니다.<br>
+                        배운내용을 <br>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="floor-3" class="row-first">
+            <div class="card goals-card card-blue">
+                <div class="badge badge-blue">GOALS</div>
+                <div class="card-content">
+                    <div class="sigma-wrapper goal-wrapper">
+                        <button class="sigma-btn">📏 크기조절</button>
+                        <div class="sigma-popup">
+                            <h4>📏 웹</h4>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card etc-card card-indigo">
+                <div class="badge badge-indigo">ETC</div>
+                <div class="card-content">
+                    <a href="https://github.com/hue1000/hue" target="_blank" class="github-link-btn">
+                        GITHUB
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
