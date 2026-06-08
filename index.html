@@ -5,101 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Front End Portfolio</title>
     <link rel="stylesheet" href="sigma.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <div class="main-container">
-        <div class="grid-bg"></div>
+<div class="main-container">
+    <div class="grid-bg"></div>
 
-        <nav class="nav-bar">
-            <a href="#floor-1" class="nav-link">소개</a>
-            <a href="#floor-2" class="nav-link">목표/학습</a>
-            <a href="#floor-3" class="nav-link">기타</a>
-        </nav>
-
-        <div class="top-arrow-btn" onclick="scrollToTop()">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11 19V10H8L12 6L16 10H13V19H11Z" fill="white"/>
-            </svg>
+    <header class="hero-section">
+        <div class="staggered-name">
+            <span class="name-line line-1">Jyeong</span>
+            <span class="name-line line-2">Hyeon</span>
+            <span class="name-line line-3">Woo</span>
         </div>
 
-        <div id="floor-1" class="row-first">
-          <div class="profile-card card-red">
-    <div class="glow-effect"></div>
-    <div class="orange-circle"></div>
-    
-    <div class="hi-container">
-        <p class="profile-p">HI</p> 
-        <div class="fake-shadow"></div>
+        <div class="hero-badges">
+            <span class="badge">FRONT END</span>
+            <span class="badge">DESIGNE</span>
+            <a href="mailto:내이메일@주소.com" class="badge hero-email-badge">
+                <i class="fa-regular fa-envelope"></i> EMAIL
+            </a>
+        </div>
+    </header>
+
+    <nav class="nav-bar">
+        <a href="#intro-row" class="nav-link">소개</a>
+        <a href="#learning-row" class="nav-link">목표/학습</a>
+        <a href="#etc-row" class="nav-link">기타</a>
+    </nav>
+
+    <div id="intro-row" class="row-first">
+        <div class="profile-card card-red">
+            <div class="glow-effect"></div>
+            <div class="orange-circle"></div>
+            <div class="hi-container">
+                <p class="profile-p">HI</p> 
+                <div class="fake-shadow"></div>
+            </div>
+        </div> 
+        <div class="card about-card card-green">
+            <div class="badge badge-green">ABOUT</div>
+            <div class="card-content">
+                <p class="about-p"> 2026.05.26~<br>
+                    안녕하세요 프론트엔드 개발을 공부하고 있는 정현우입니다.<br>
+                    사용자 관점에서 화면이 구현되고 코드들을 직접 실습해보는<br>
+                    과정에서 다양한 웹 디자인과 기능들을 배우고 꾸준한 학습으로<br>
+                    더 익숙해지고 성장하는걸 목표로 노력하는 개발자가 되겠습니다.
+                </p>
+                </p>
+            </div>
+        </div>
     </div>
-</div> 
-            <div class="card info-card card-orange">
-                <div class="badge badge-orange">FIGMA</div>
-                <div class="card-content">
-                    <p>NAME:<br><span class="dot-line">FRONT END</span></p>
-                    <p>STARTED:<br><span class="dot-line">2026 - 04 - 29</span></p>
-                    <p>FIGMA STARTED:<br><span class="dot-line">2026 - 05 - 26</span></p>
-                    <p>BIO:<br><span class="dot-line">MY FIRST FIGMA PAGE</span></p>
-                </div>
+
+<div id="learning-row" class="row-second">
+        <div class="card info-card card-orange">
+            <div class="badge badge-orange">PROFILE</div>
+            <div class="card-content">
+                <p>NAME:<br><span class="dot-line">Jeong Hyeon Woo</span></p>
+                <p>STARTED:<br><span class="dot-line">2026 - 04 - 29</span></p>
+                <p>FIGMA STARTED:<br><span class="dot-line">2026 - 05 - 26</span></p>
+                <p>BIO:<br><span class="dot-line">MY FIRST FIGMA PAGE</span></p>
             </div>
         </div>
 
-        <div id="floor-2" class="row-first">
-            <div class="card learning-card card-yellow">
-                <div class="badge badge-yellow">LEARNING</div>
-                <div class="card-content">
-                    <ul>
-                        <li>🛠️ HTML</li>
-                        <li>🎨 CSS</li>
-                        <li>✏️ FIGMA</li>
-                        <li>🐙 GITHUB</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="card about-card card-green">
-                <div class="badge badge-green">ABOUT</div>
-                <div class="card-content">
-                    <p class="about-p"> 2026.05.26~<br>
-                        안녕하세요 현재 프론트 엔트 개발을 공부하고 있는 정현우입니다.<br>
-                        배운내용을 <br>
-
-                    </p>
-                </div>
+        <div class="card learning-card card-yellow">
+            <div class="badge badge-yellow">LEARNING</div>
+            <div class="card-content">
+                <ul>
+                    <li class="hover-item"><i class="fab fa-html5" style="color: #e34f26;"></i> HTML</li>
+                    <li class="hover-item"><i class="fab fa-css3-alt" style="color: #1572b6;"></i> CSS</li>
+                    <li class="hover-item"><i class="fab fa-figma" style="color: #f24e1e;"></i> FIGMA</li>
+                    <li class="hover-item"><i class="fab fa-github" style="color: #181717;"></i> GITHUB</li>
+                </ul>
             </div>
         </div>
+    </div>
 
-        <div id="floor-3" class="row-first">
-            <div class="card goals-card card-blue">
-                <div class="badge badge-blue">GOALS</div>
-                <div class="card-content">
-                    <div class="sigma-wrapper goal-wrapper">
-                        <button class="sigma-btn">📏 크기조절</button>
-                        <div class="sigma-popup">
-                            <h4>📏 웹</h4>
-
-                        </div>
+    <div id="etc-row" class="row-third">
+        <div class="card goals-card card-blue">
+            <div class="badge badge-blue">GOALS</div>
+            <div class="card-content">
+                <div class="sigma-wrapper goal-wrapper">
+                    <button class="sigma-btn">📏 크기조절</button>
+                    <div class="sigma-popup">
+                        <h4>📏 웹</h4>
                     </div>
                 </div>
             </div>
-
-            <div class="card etc-card card-indigo">
-                <div class="badge badge-indigo">ETC</div>
-                <div class="card-content">
-                    <a href="https://github.com/hue1000/hue" target="_blank" class="github-link-btn">
-                        GITHUB
-                    </a>
-                </div>
+        </div>
+        <div class="card etc-card card-indigo">
+            <div class="badge badge-indigo">ETC</div>
+            <div class="card-content">
+                <a href="https://github.com/hue1000/hue" target="_blank" class="github-link-btn">
+                    GITHUB
+                </a>
             </div>
         </div>
-
     </div>
 
-    <script>
-        function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-    </script>
+    <footer class="site-footer">
+        © 2026 Jeong Hyeon Woo
+    </footer>
+
+</div>
+
+<script>
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
 
 </body>
 </html>
